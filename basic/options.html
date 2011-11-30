@@ -1,0 +1,38 @@
+<html>
+    
+    <head>
+        <title>
+            My Test Extension Options
+        </title>
+    </head>
+    <script type="text/javascript">
+    // Saves options to localStorage.
+
+
+function save_options() {
+    var select = document.getElementById("tasaddr");
+    var startaddr = select.value;
+    localStorage.setItem("saddr", startaddr);
+}
+// Restores select box state to saved value from localStorage.
+
+
+function restore_options() {
+    var address = localStorage.getItem("saddr");
+    var txtAddress = document.getElementById("tasaddr");
+    txtAddress.value = address;a
+}
+    </script>
+    
+    <body onload="restore_options()">
+        Your Starting address:
+        <textarea id="tasaddr" rows="2" cols="20">
+            Enter your address here
+        </textarea>
+        <br>
+        <button onclick="save_options()">
+            Save
+        </button>
+    </body>
+
+</html>

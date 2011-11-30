@@ -1,0 +1,8 @@
+{
+  "name": "Directions",
+  "description": "Shows some of the features of the Context Menus API",
+  "version": "0.1",
+  "permissions": ["contextMenus"], 
+  "options_page": "options.html",	
+  "background_page": "background.html"
+}
