@@ -4,11 +4,11 @@
         <title>
             My Test Extension Options
         </title>
+        <script type="text/javascript" src="sample.js"></script>
     </head>
-    <script type="text/javascript">
-    // Saves options to localStorage.
 
-
+    <script type="text/javascript"> 
+// Saves options to localStorage.
 function save_options() {
     var select = document.getElementById("tasaddr");
     var startaddr = select.value;
@@ -20,7 +20,7 @@ function save_options() {
 function restore_options() {
     var address = localStorage.getItem("saddr");
     var txtAddress = document.getElementById("tasaddr");
-    txtAddress.value = address;a
+    txtAddress.value = address;
 }
     </script>
     

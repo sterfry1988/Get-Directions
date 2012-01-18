@@ -37,7 +37,9 @@ for (var i = 0; i < contexts.length; i++) {
         "contexts": [context],
         "onclick": genericOnClick
     });
+    chrome.contextMenus.remove(1);
     console.log("'" + context + "' item:" + id);
+    console.log("what is this" + contexts[1] + contexts[0] + contexts[2]);
 }
 
 ;

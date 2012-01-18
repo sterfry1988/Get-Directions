@@ -1,0 +1,20 @@
+{
+"name": "Directions test",
+"description": "Shows some of the features of the Context Menus API",
+"version": "0.1",
+"background_page": "background.html",
+"permissions": [
+            "contextMenus"
+        
+                             
+], 
+"options_page": "options.html",	
+"content_scripts": [
+      {
+          "matches": ["http://*/*","https://*/*"],
+          "js": ["sample.js"],
+          "all_frames": false
+      }
+                        
+]
+}
