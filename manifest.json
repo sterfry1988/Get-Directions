@@ -12,7 +12,8 @@
 "content_scripts": [
       {
           "matches": ["http://*/*","https://*/*"],
-          "js": ["sample.js"],
+          "css": ["options.css"],
+          "js": ["sample.js","options.js"],
           "all_frames": false
       }
                         

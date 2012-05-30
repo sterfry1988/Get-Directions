@@ -9,11 +9,11 @@ function genericOnClick(info, tab) {
     chrome.extension.sendRequest({
         method: "getLocalStorage",
         key: "saddr"
-    }, function (response) {
+    },function (response) {
         console.log("request made");
         var sText = info.selectionText;
         var daddr = sText.split(' ').join('+');
-        var saddr = response.data;
+        var saddr = response.data || "1203";
         var homeTxt = "http://maps.google.com/maps?" + "saddr=" 
         + saddr.split(' ').join('+') + "&daddr=";
         var url = homeTxt + daddr;
@@ -37,9 +37,6 @@ for (var i = 0; i < contexts.length; i++) {
         "contexts": [context],
         "onclick": genericOnClick
     });
-    chrome.contextMenus.remove(1);
-    console.log("'" + context + "' item:" + id);
-    console.log("what is this" + contexts[1] + contexts[0] + contexts[2]);
 }
 
 ;
