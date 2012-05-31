@@ -1,5 +1,5 @@
 // Saves options to localStorage.
-window.onload = restore_options();
+window.onload=restore_options();
 var save = document.querySelector('#save button');
 save.textContent = chrome.i18n.getMessage('save');
 save.onclick = function() {

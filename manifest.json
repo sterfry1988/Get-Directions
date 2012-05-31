@@ -8,14 +8,6 @@
         
                              
 ], 
-"options_page": "options.html",	
-"content_scripts": [
-      {
-          "matches": ["http://*/*","https://*/*"],
-          "css": ["options.css"],
-          "js": ["sample.js","options.js"],
-          "all_frames": false
-      }
-                        
-]
+"options_page": "options.html"	
+
 }

@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <head>
-   <meta charset="UTF-8" />
    <title>Get Directions Options</title>
-   <link href="options.css" rel="stylesheet" />
+   <link href="options.css" rel="stylesheet"/>
 </head>
 <body>
 <h3>Your Starting address:</h3>
-<div>
-<textarea id="addressbox" rows="2" cols="20"></textarea>
-</div>
+<div><textarea id="addressbox" rows="2" cols="20"></textarea>
 <br>
 <section id="save">
 <button>Save</button>
